@@ -8,23 +8,59 @@ package gpstaller1;
 import java.util.StringTokenizer;
 
 /**
+ * Validador - Clase que contiene los metodos de conteo
  *
- * @author obaquerog
+ * @author Omar Baquero - Brian Rodriguez
+ * @version 1.0
+ *
  */
 public class Validador {
-    
-    public  Validador(){
-    
+
+    public Validador() {
+
     }
-    public int cantidadCaracteres(String frase){
+
+    /**
+     * cantidadCaracteres - Metodo para obtener la cantidad de caracteres de una
+     * frase
+     *
+     * @param frase frase escrita por el usuario a través de la consola
+     * @return retorna un valor entero de la cantidad de caracteres
+     * @author Omar Baquero
+     * @version 1.0
+     *
+     */
+    public int cantidadCaracteres(String frase) {
         return frase.length();
     }
-    public int cantidadPalabras(String frase){
+
+    /**
+     * cantidadPalabras - Metodo para obtener la cantidad de palabras de una
+     * frase
+     *
+     * @param frase frase escrita por el usuario a través de la consola
+     * @return retorna un valor entero de la cantidad de palabras
+     * @author Omar Baquero
+     * @version 1.0
+     *
+     */
+    public int cantidadPalabras(String frase) {
         StringTokenizer cPalabras = new StringTokenizer(frase);
         return cPalabras.countTokens();
     }
-    public int cantidadEspacios(String frase){
+
+    /**
+     * cantidadEspacios - Metodo para obtener la cantidad de espacios en una
+     * frase
+     *
+     * @param frase frase escrita por el usuario a través de la consola
+     * @return retorna un valor entero de la cantidad de espacios
+     * @author Omar Baquero
+     * @version 1.0
+     *
+     */
+    public int cantidadEspacios(String frase) {
         return frase.replaceAll("[^ ]", "").length();
     }
-    
+
 }
