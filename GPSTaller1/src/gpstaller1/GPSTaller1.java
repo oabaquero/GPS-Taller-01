@@ -24,10 +24,19 @@ public class GPSTaller1 {
         // TODO code application logic here
           Scanner sc = new Scanner(System.in);
           String frase;
-          
-          System.out.println("Por favor digite su texto= ");
+           int variable=0;
+           int variable2=0;
+           int variable3=0;
+          Validador validador = new Validador();
+          System.out.println("Por favor digite Una frase= ");
           frase=sc.nextLine();
           System.out.println (frase);
+          variable= validador.cantidadPalabras(frase);
+          variable2= validador.cantidadCaracteres(frase);
+          variable3= validador.cantidadEspacios(frase);
+          System.out.println("La frase que ud digito contiene "+variable+" palabras");
+          System.out.println("La frase que ud digito contiene "+variable2+" caracteres");
+          System.out.println("La frase que ud digito contiene "+variable3+" espacios");         
           
     }
     
