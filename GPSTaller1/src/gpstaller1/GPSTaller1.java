@@ -5,17 +5,30 @@
  */
 package gpstaller1;
 
+import java.util.Scanner;
+
+
+
 /**
  *
- * @author obaquerog
+ * @author rcbrian
  */
 public class GPSTaller1 {
-
+ 
+                
+                
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+          Scanner sc = new Scanner(System.in);
+          String frase;
+          
+          System.out.println("Por favor digite su texto= ");
+          frase=sc.nextLine();
+          System.out.println (frase);
+          
     }
     
 }
