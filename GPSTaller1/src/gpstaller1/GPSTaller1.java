@@ -9,16 +9,22 @@ import java.util.Scanner;
 
 
 
-/**
+
+
+/** Programa para calcular la cantidad de espacios, numero de caracteres y numero de palabras de una frase digitada
  *
- * @author rcbrian
+ * @author rcbrian- omar
+ * @version 1
+ 
+ * 
  */
 public class GPSTaller1 {
  
                 
                 
     /**
-     * @param args the command line arguments
+     * 
+     * 
      */
     public static void main(String[] args) {
         // TODO code application logic here
